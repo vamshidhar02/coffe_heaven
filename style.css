@@ -349,7 +349,6 @@ hr{
         min-width: 60px;
     }
     .row-3{
-        /* justify-content: space-around; */
         align-items: flex-start;
     }
 }
@@ -369,23 +368,31 @@ hr{
         position: absolute;
         top: 65px;
         right: 0;
-        background: var(--main-color);
+        background: var(--white);
         width: 100%;
-        display: block;
+        display: flex;
+        flex-direction: column;
         overflow: hidden;
         transition: 0.5s;
-        
+        text-align: center; 
+        justify-content: center;
     }
     nav ul li{
-        display: block;
-        /* margin-left: 455px; */
-        margin-right: 50px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        display: inline-block;
+        width: 100px;
+        margin: 10px auto;
+        background: var(--white);
+        border-radius: 8px;
+        padding: 4px;
+    }
+    li:hover{
+        background-color: var(--main-color);
     }
     nav ul li a{
-        color: #fff;
-        text-align: right;
+        color: var(--black);
+    }
+    a:hover{
+        color: var(--white);
     }
     nav ul{
         padding: 0;
