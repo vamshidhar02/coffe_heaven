@@ -196,12 +196,19 @@
             <div class="col-2">
                 <img src="images/contact-img.svg" alt="">
             </div>
-            <div class="col-2" id="table">
-                <h4>Book a Table</h4>
-                <input type="text" placeholder="Enter your name">
-                <input type="phone" placeholder="Enter your number">
-                <input type="number" placeholder="How many Guests">
-                <a href="#" class="btn">Send Message</a>
+            <div class="col-2">
+                <form action="" id="table">
+                    <h4>Book a Table</h4>
+                    <div class="alert">
+                        <p>Your Message sent</p>
+                    </div>
+                    <input type="text" id="name" placeholder="Enter your name">
+                    <input type="phone" id="number" placeholder="Enter your number">
+                    <input type="number" id="guests" placeholder="How many Guests">
+                    <!-- <a href="#" class="btn">Send Message</a> -->
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                
             </div>
         </div>
     </div>
@@ -251,5 +258,7 @@
     }
 
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="mail.js"></script>
 </body>
 </html>

@@ -292,11 +292,20 @@ nav ul li a{
     margin:1rem auto;
     font-family: 'Merienda One', cursive;
 }
-#table a{
-    width: 160px;
-    margin: 1rem auto;
-    padding-left: 10px;
-    padding-right: 10px;
+
+#table button{
+    display: inline-block;
+    margin: 20px auto;
+}
+.alert{
+    text-align: center;
+    display: none;
+}
+.alert p{
+    font-size: 17px;
+    color: #be9c79;
+    font-weight: 300;
+    font-family: 'Merienda One', cursive;
 }
 i{
    
@@ -334,6 +343,12 @@ hr{
 
 
 /* -------------------------responsive--------------------- */
+@media only screen and (max-width:1110px) {
+    #table input{
+        max-width: 380px;
+    }
+    
+}
 
 @media only screen and (max-width:1060px){
   
@@ -352,7 +367,15 @@ hr{
         align-items: flex-start;
     }
 }
-@media only screen and (max-width:740px){
+@media only screen and (max-width:815px){
+    #table input{
+        max-width: 280px;
+    }
+}
+@media only screen and (max-width:770px){
+    #table input{
+        max-width: 270px;
+    }
     .col-3{
        flex-basis: 45%; 
     }
@@ -420,6 +443,9 @@ hr{
     }
     .logo img{
         margin-top: 12px;
+    }
+    #table input{
+        max-width: 250px;
     }
 
 }
